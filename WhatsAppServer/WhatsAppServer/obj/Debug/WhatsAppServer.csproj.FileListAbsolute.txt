@@ -1,0 +1,10 @@
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\bin\Debug\WhatsAppServer.exe.config
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\bin\Debug\WhatsAppServer.exe
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\bin\Debug\WhatsAppServer.pdb
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\obj\Debug\WhatsAppServer.csproj.AssemblyReference.cache
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\obj\Debug\WhatsAppServer.csproj.CoreCompileInputs.cache
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\obj\Debug\WhatsAppServer.csproj.CopyComplete
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\obj\Debug\WhatsAppServer.exe
+C:\Users\Omer\source\repos\WhatsAppServer\WhatsAppServer\obj\Debug\WhatsAppServer.pdb

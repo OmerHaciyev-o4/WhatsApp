@@ -1,0 +1,73 @@
+﻿<Window x:Class="WhatsAppClient.MVVM.Views.PolicyScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WhatsAppClient.MVVM.Views"
+        mc:Ignorable="d"
+        Title="Welcome"
+        Height="720"
+        Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Icon="\MVVM\Resource\Logo.png">
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,600,720" RadiusX="10" RadiusY="10"/>
+    </Window.Clip>
+    <StackPanel Orientation="Vertical">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="690"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="#101d24">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="1.35*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="../Resource/Logo.png" Width="30" Height="30" HorizontalAlignment="Left"/>
+                <Grid x:Name="contextBar" Grid.Column="1">
+                    <Label Content="Verification Screen" Foreground="White" FontSize="15" HorizontalAlignment="Left" Width="362"/>
+                </Grid>
+
+                <Button x:Name="minimizeButton" Grid.Column="2" Content="_" FontSize="25" Width="50" Foreground="White" Background="Transparent" BorderThickness="0" ToolTip="Minimize" Command="{Binding MinimizeCommand}" HorizontalAlignment="Left" Padding="0 -5 0 0"/>
+                <Button x:Name="closeButton" Grid.Column="2" Content="X" FontSize="20" Width="50" Foreground="White" Background="Transparent" BorderThickness="0" ToolTip="Close" Command="{Binding CloseCommand}" HorizontalAlignment="Right" Padding="0 0 0 0"/>
+            </Grid>
+
+            <Grid Grid.Row="1" Background="#101d24">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Content="Welcome to Whatsapp" Foreground="White" FontSize="40" HorizontalAlignment="Center"/>
+                <Image Grid.Row="1" Source="../Resource/LoginScreenCenterImg.png" HorizontalAlignment="Center"/>
+                <StackPanel Grid.Row="2">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label FontSize="15" Foreground="#9ba1a3" Content="Read our"/>
+                        <Label FontSize="15" Foreground="#68bbe4" Content="Privacy Policy."/>
+                        <Label FontSize="15" Foreground="#9ba1a3" Content="Tap &quot;Agree and continue&quot; to"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label FontSize="15" Foreground="#9ba1a3" Content="accept the"/>
+                        <Label FontSize="15" Foreground="#68bbe4" Content="Terms of Service"/>
+                        <Label FontSize="15" Foreground="#9ba1a3" Content="." Margin="-10 0 0 0"/>
+                    </StackPanel>
+                </StackPanel>
+                <Button Grid.Row="3" Height="45" Width="295" Background="#00af9c" Content="AGREE AND CONTINUE" FontWeight="DemiBold" FontSize="15" Command="{Binding ContinueCommand}"/>
+                <StackPanel Grid.Row="4">
+                    <Label FontSize="15" Foreground="#9ba1a3" HorizontalAlignment="Center" Content="from"/>
+                    <Label FontSize="15" Foreground="#9ba1a3" HorizontalAlignment="Center" Content="IT Step Academy"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</Window>
